@@ -1,4 +1,4 @@
-.filters {
+div.container section.filters {
     color: white;
     height: 70px;
     width: 100%;
@@ -8,7 +8,7 @@
     border-radius: 4px;
 }
 
-button {
+div.container section.filters button {
     font-size: 18px;
     background-color: #FF5A5F;
     color: white;
@@ -20,11 +20,11 @@ button {
     margin-right: 30px;
     transform: translateY(25%);
 }
-button:hover {
+div.container section.filters button:hover {
     opacity: 0.9;
 }
 
-.locations {
+div.container section.filters div.locations {
     display: inline-block;
     text-indent: 50px;
     color: black;
@@ -38,7 +38,7 @@ button:hover {
 
 }
 
-.amenities {
+div.container section.filters  div.amenities {
     display: inline-block;
     text-indent: 50px;
     color: black;
@@ -51,23 +51,17 @@ button:hover {
 
 }
 
-.locations h3, .amenities h3 {
+div.container section.filters h3 {
     font-weight: 600;
     line-height: 1;
 }
-.locations h4, .amenities h4 {
+div.container section.filters h4 {
     font-weight: 400;
     font-size: 14px;
     line-height: 0;
 }
-
-/* Task 6 Additions: */
-/* Dropdown div */
-.filters .locations, .filters .amenities {
-    cursor: pointer;
-}
 /* .popover default (hidden) */
-.popover {
+div.container section.filters ul.popover {
     display: none;
     /* display: inline; */
     position: absolute;
@@ -78,25 +72,25 @@ button:hover {
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    /* translate: transform(25%, 0%); */
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    line-height: 1;
+    padding: 20px 0px 20px 0px;
+    line-height: 1.5;
 }
-.popover ul {
+div.container section.filters div.locations ul.popover ul {
     list-style-type: none;
-    text-indent: 75px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
-.popover h2 {
+div.container section.filters div.locations ul.popover h2 {
     font-size: 16px;
     line-height: 0;
 }
 /* Show .locations .popover on hover */
-.locations:hover .popover, .locations:hover .popover ul {
+div.container section.filters div.locations:hover ul.popover, div.container section.filters div.locations:hover ul.popover ul {
     display: block;
 }
 /* Show .amenities .popover on hover */
-.amenities:hover .popover {
+div.container section.filters div.amenities:hover ul.popover {
     display: block;
 }
