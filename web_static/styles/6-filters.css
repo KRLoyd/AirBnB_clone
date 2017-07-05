@@ -7,6 +7,7 @@
     border-color: #DDDDDD;
     border-radius: 4px;
 }
+
 button {
     font-size: 18px;
     background-color: #FF5A5F;
@@ -22,20 +23,32 @@ button {
 button:hover {
     opacity: 0.9;
 }
+
 .locations {
     display: inline-block;
+    text-indent: 50px;
     color: black;
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
-    transform: translate(25%, -70%);
+    transform: translateY(-70%);
+
+    position: relative;
+    cursor: pointer;
+
 }
+
 .amenities {
     display: inline-block;
+    text-indent: 50px;
     color: black;
     height: 100%;
     width: 25%;
-    transform: translate(50%, -70%);
+    transform: translate(-4px, -70%);
+
+    position: relative;
+    cursor: pointer;
+
 }
 
 .locations h3, .amenities h3 {
@@ -46,4 +59,44 @@ button:hover {
     font-weight: 400;
     font-size: 14px;
     line-height: 0;
+}
+
+/* Task 6 Additions: */
+/* Dropdown div */
+.filters .locations, .filters .amenities {
+    cursor: pointer;
+}
+/* .popover default (hidden) */
+.popover {
+    display: none;
+    /* display: inline; */
+    position: absolute;
+    z-index: 1;
+
+    color: black;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    /* translate: transform(25%, 0%); */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.popover ul {
+    list-style-type: none;
+    text-indent: 75px;
+}
+.popover h2 {
+    font-size: 16px;
+    line-height: 0;
+}
+/* Show .locations .popover on hover */
+.locations:hover .popover, .locations:hover .popover ul {
+    display: block;
+}
+/* Show .amenities .popover on hover */
+.amenities:hover .popover {
+    display: block;
 }
