@@ -15,24 +15,12 @@ div.container section.places h1 {
     margin-right: 90%;
     order: 1;
 }
-div.container section.places article.left_article {
+div.container section.places article {
     width: 390px;
     padding: 20px;
     margin: 20px;
     border: 1px solid #FF5A5F;
     border-radius: 4px;
-
-    align-self: flex-start;
-    order: 2;
-}
-div.container section.places article.right_article {
-    width: 390px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #FF5A5F;
-    border-radius: 4px;
-
-    align-self: flex-end;
     order: 2;
 }
 div.container section.places article.last_article {
