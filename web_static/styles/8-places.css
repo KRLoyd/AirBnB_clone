@@ -37,7 +37,6 @@ div.container section.places article h2 {
 div.price_by_night {
     border: 4px solid #FF5A5F;
     border-radius: 60px;
-    width: 60px;
     min-width: 60px;
     height: 60px;
     /* What's a better way of doing this?? */
@@ -64,6 +63,11 @@ div.information {
 
 div.information div.max_guest, div.information div.number_rooms, div.information div.number_bathrooms {
     width: 100px;
+}
+
+div.information p {
+    line-height: 0;
+    text-align: left;
 }
 
 div.user {
