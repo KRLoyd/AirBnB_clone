@@ -1,17 +1,14 @@
 div.container section.places {
     padding: 20px;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
     align-items: center;
     justify-content: center;
 }
 
 div.container section.places h1 {
     font-size: 30px;
-
     margin-right: 90%;
     order: 1;
 }
@@ -35,4 +32,41 @@ div.container section.places article.last_article {
 div.container section.places article h2 {
     font-size: 30px;
     text-align: center;
+}
+
+div.price_by_night {
+    border: 4px solid #FF5A5F;
+    border-radius: 60px;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    /* What's a better way of doing this?? */
+    margin: -95px 0px 10px 330px;
+}
+div.price_by_night p {
+    color: #FF5A5F;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+div.information {
+    height: 80px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+div.information div.max_guest, div.information div.number_rooms, div.information div.number_bathrooms {
+    width: 100px;
+}
+
+div.user {
+    line-height: 2;
+    margin-top: 10px;
 }
