@@ -12,7 +12,7 @@ div.container section.places h1 {
     margin-right: 90%;
     order: 1;
 }
-div.container section.places article {
+div.container section.places article.not_last {
     width: 390px;
     padding: 20px;
     margin: 20px;
